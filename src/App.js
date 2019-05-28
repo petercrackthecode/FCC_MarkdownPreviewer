@@ -1,9 +1,9 @@
-import Preview from 'components/Preview.js';
-import Editor from 'components/Editor.js';
-import Header from 'components/Header.js';
+import Preview from './components/Preview.js';
+import Editor from './components/Editor.js';
+import Header from './components/Header.js';
 
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 
 class App extends React.Component {
   state= {
@@ -16,7 +16,7 @@ class App extends React.Component {
 
   render()  {
     return (
-      <div className="App">
+      <div id="app">
         <Header/>
         <Preview {...this.state}/>
         <Editor {...this.state} onTextChange={this.handleTextChange}/>
