@@ -7,7 +7,7 @@ import './App.css';
 
 class App extends React.Component {
   state= {
-    m_text: 'Start creating your beautiful article by writing on the Preview Area',
+    m_text: '',
   };
 
   handleTextChange= (text) =>  {
@@ -18,8 +18,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-        <Preview text={this.state.m_text}/>
-        <Editor text={this.state.m_text} onTextChange={this.handleTextChange}/>
+        <Preview {...this.state}/>
+        <Editor {...this.state} onTextChange={this.handleTextChange}/>
       </div>
     );
   }
