@@ -2067,6 +2067,11 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+autogrow-textarea@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/autogrow-textarea/-/autogrow-textarea-1.0.1.tgz#12d62e03e5c323fcae519789d37d791f97e167d9"
+  integrity sha512-obr9F1D7bBYZdyb+Qo7UqoxUdzHNDwLa5eayJ7A88Ia/KDW8qX8JGKPXt4jvnuTPY/8xaDYyZhTBsZqjQa4Ltw==
+
 autoprefixer@^9.4.9:
   version "9.5.1"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.5.1.tgz#243b1267b67e7e947f28919d786b50d3bb0fb357"

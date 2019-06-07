@@ -1,0 +1,47 @@
+// import Quicksand font
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@mixin Border($color)   {
+    border: 3px solid $color;
+}
+
+#app  {
+    display: block;
+    position: relative;
+    text-align: center;
+    @include Border(blue);    
+
+    #header    {
+        position: fixed;
+        display: block;
+        top: 20px;
+        width: 100%;
+        height: 100px;
+        @include Border(black);
+        background-color: black;
+        color: white;
+        line-height: 100px; // make the text vertically center using line-height method: line-height = height 
+        font-weight: 900;
+        font-size: 32px;
+        font-family: 'Quicksand', sans-serif;
+        opacity: 0.8;
+
+        i   {
+            color: rgb(27, 100, 196);
+        }
+    }
+
+    #content  {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        @include Border(red);
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
+  
+  
+  
+  
+  
