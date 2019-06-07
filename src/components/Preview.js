@@ -3,7 +3,7 @@ import React from 'react';
 
 
 export default function Preview(props)   {
-    return <div id='preview'>alo {props.m_text}</div>;
+    return <div id='preview' className='container'>{props.m_text}</div>;
 }
 
 
