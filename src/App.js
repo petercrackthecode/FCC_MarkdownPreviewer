@@ -8,11 +8,17 @@ import './styles/App.css';
 
 class App extends React.Component {
   state= {
-    m_text: '',
+    m_text: '', // input 
+    m_rows: 5, // current number of rows
+    minRows: 5,
+    maxRows: 20,
   };
 
-  handleTextChange= (text) =>  {
-    this.setState({m_text: text});
+  handleTextChange= (text, rows) =>  {
+    this.setState({
+      m_text: text,
+      m_rows: rows,
+    });
   }
 
   render()  {
