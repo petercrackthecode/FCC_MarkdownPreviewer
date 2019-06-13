@@ -33,7 +33,7 @@ export default class Editor extends React.PureComponent   {
             className= 'container'
             value= {this.props.m_text}
             rows={this.props.m_rows}
-            placeholder={'Let\'s start writing your beautiful essay...'}
+            placeholder={'Let\'s start writing...'}
             onChange= {this.handleTextChange}
         />
     );
