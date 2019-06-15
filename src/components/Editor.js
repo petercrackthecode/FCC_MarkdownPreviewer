@@ -8,6 +8,8 @@ export default class Editor extends React.PureComponent   {
         const previousRows= event.target.rows;
         event.target.rows= minRows; // reset number of rows in text area
         const currentRows= ~~(event.target.scrollHeight / textAreaLineHeight);
+        console.log("Hey, I'm the current row, and I'm ", currentRows);
+        console.log("The current maxRows is " + maxRows);
 
         if (currentRows === previousRows)   {
             event.target.rows= currentRows;

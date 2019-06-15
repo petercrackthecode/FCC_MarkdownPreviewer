@@ -11,7 +11,7 @@ class App extends React.Component {
     m_text: '', // input 
     m_rows: 5, // current number of rows
     minRows: 5,
-    maxRows: 20,
+    maxRows: 10,
   };
 
   handleTextChange= (text, rows) =>  {
