@@ -5,7 +5,7 @@ import React from 'react';
 export default function Preview(props)   {
     const displayText= props.m_text ? props.m_text : 'Your text will appear here';
     const colorStyle= props.m_text ? {color: "black", opacity: '1'} 
-                                   : {color: "rgb(22, 91, 219)", opacity: '0.5'};
+                                   : {color: "hsl(219, 81.7%, 75%)", opacity: '1'};
     return <div id='preview' 
                 className='container' style={colorStyle}>{displayText}</div>;
 }

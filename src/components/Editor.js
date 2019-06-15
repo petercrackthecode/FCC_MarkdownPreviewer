@@ -1,10 +1,6 @@
 import React from 'react';
 
 export default class Editor extends React.PureComponent   {
-    constructor(props)  {
-        super(props);
-    }
-
     handleTextChange= event => {
         const textAreaLineHeight= 24;
         const {minRows, maxRows}= this.props;
