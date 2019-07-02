@@ -8,10 +8,11 @@ import './styles/App.css';
 
 class App extends React.Component {
   state= {
-    m_text: '', // input 
+    m_text: '', // input
     m_rows: 5, // current number of rows
     minRows: 5,
-    maxRows: 10,
+    maxRows: 7,
+    isFocus: false
   };
 
   handleTextChange= (text, rows) =>  {
@@ -21,12 +22,18 @@ class App extends React.Component {
     });
   }
 
+  handleFocus= () => {
+    this.setState((currentState) => ({
+      isFocus: !currentState.isFocus
+    }));
+  }
+
   render()  {
     return (
       <div id="app">
         <Header/>
         <div id='content'>
-          <Editor {...this.state} onTextChange={this.handleTextChange}/>
+          <Editor {...this.state} onTextChange= {this.handleTextChange} onFocusChange= {this.handleFocus}/>
           <Preview {...this.state}/>
         </div>
         <Footer/>
