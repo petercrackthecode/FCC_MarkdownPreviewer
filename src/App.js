@@ -2,13 +2,15 @@ import Preview from './components/Preview.js';
 import Editor from './components/Editor.js';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import {TextPlaceHolder} from './components/TextPlaceHolder.js';
+
+import './styles/App.css';
 
 import React from 'react';
-import './styles/App.css';
 
 class App extends React.Component {
   state= {
-    m_text: '', // input
+    m_text: TextPlaceHolder, // input
     m_rows: 5, // current number of rows
     minRows: 5,
     maxRows: 7,

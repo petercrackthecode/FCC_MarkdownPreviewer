@@ -1,4 +1,4 @@
-// import Quicksand font
+/* import Quicksand font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 $BackgroundColorForTextArea: #FAFAFA;
@@ -17,7 +17,7 @@ $AppBackgroundColor: white;
     font-size: 24px;
     line-height: 24px;
     overflow: auto;
-    height: auto;
+    // height: auto;
     width: 650px;
     font-family: 'Quicksand', 'san-serif';
     text-align: left;
