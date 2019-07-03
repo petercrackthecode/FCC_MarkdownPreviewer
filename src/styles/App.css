@@ -6,9 +6,9 @@
   padding: 8px;
   font-size: 24px;
   line-height: 24px;
-  overflow: none;
+  overflow: auto;
   height: auto;
-  width: 400px;
+  width: 650px;
   font-family: 'Quicksand', 'san-serif';
   text-align: left;
   z-index: 1;

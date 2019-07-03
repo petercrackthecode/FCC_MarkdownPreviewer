@@ -1,6 +1,5 @@
 import React from 'react';
-import { MarkdownPreview } from 'react-marked-markdown';
-
+import marked from 'marked';
 
 export default function Preview(props)   {
     //'Your text will appear here';
@@ -12,10 +11,16 @@ export default function Preview(props)   {
 
     const finalStyle= {...colorStyle, ...backgroundColor, ...boxShadow};
 
+    const createMarkup= () => {
+        return {
+            __html: marked(props.m_text)
+        };
+    };
+
     return <div id='preview'
-                className='container' style={finalStyle}>
-                {props.m_text ? 'Your text will appear here' : <MarkdownPreview value={props.m_text}/>}
-            </div>;
+                className='container'
+                style={finalStyle}
+                dangerouslySetInnerHTML= {props.m_text ? createMarkup() : {__html: 'Your text will appear here'}}/>;
 }
 
 
