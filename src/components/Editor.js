@@ -36,6 +36,7 @@ export default class Editor extends React.PureComponent   {
         return (
             <textarea id= 'editor'
                 className= 'container'
+                autoFocus
                 value= {this.props.m_text}
                 rows={this.props.m_rows}
                 placeholder={'Let\'s start writing...'}

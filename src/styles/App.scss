@@ -3,10 +3,6 @@
 
 $BackgroundColorForTextArea: #FAFAFA;
 
-@mixin Border($color)   {
-    border: 3px solid $color;
-}
-
 $AppBackgroundColor: white;
 
 %Container  {
@@ -50,10 +46,8 @@ $AppBackgroundColor: white;
     background-color: $AppBackgroundColor;
     position: relative;
     text-align: center;
-    @include Border(blue);
     margin: 0px;
     padding: 0px;
-    @include Border(magenta);
 
     #header    {
         @include FooterAndHeader(100px, 2);
