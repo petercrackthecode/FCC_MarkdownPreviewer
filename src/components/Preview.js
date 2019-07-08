@@ -1,6 +1,6 @@
 import React from 'react';
 import marked from 'marked';
-import DOMPurify from "dompurify";
+// import DOMPurify from "dompurify";
 
 export default function Preview(props)   {
     const colorStyle= props.m_text ? {color: "black", opacity: '1'}
@@ -10,19 +10,28 @@ export default function Preview(props)   {
 
     const finalStyle= {...colorStyle, ...backgroundColor, ...boxShadow};
 
-    const sanitizedText= DOMPurify.sanitize(props.m_text);
+    // const sanitizedText= DOMPurify.sanitize(props.m_text);
+
+    marked.setOptions({
+        breaks: true,
+        gfm: true,
+    });
 
     const createMarkup= () => {
         return {
-            __html: marked(sanitizedText ? sanitizedText : "Your text will appear here...")
+            __html: marked(props.m_text ? props.m_text : '')
         };
     };
 
-    return <textarea id='preview'
-                className='container'
-                style={finalStyle}
-                dangerouslySetInnerHTML= {createMarkup()}
-                readOnly/>;
+    return (
+        <div id='preview'
+             className='container'
+             style={finalStyle}
+             dangerouslySetInnerHTML= {createMarkup()}
+             contentEditable="true"
+             data-text='Your text will appear here...'
+             />
+    );
 }
 
 

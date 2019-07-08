@@ -74,8 +74,14 @@ $AppBackgroundColor: white;
             @extend %Container;
         }
 
+        [contentEditable= true]:empty::before {
+            content: attr(data-text);
+            padding-top: 0px;
+        }
+
         #preview    {
             color: rgb(22, 91, 219);
+            pointer-events: none;
         }
     }
 

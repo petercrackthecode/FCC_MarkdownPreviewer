@@ -9,15 +9,18 @@
   line-height: 24px;
   overflow: auto;
   width: 650px;
-  font-family: 'Quicksand', 'san-serif';
+  font-family: "Quicksand", "san-serif";
   text-align: left;
   z-index: 1;
   border: 0.1px solid #C0C0C0;
-  background-color: #FAFAFA; }
-  #app #content .container::placeholder {
-    color: #165bdb; }
-  #app #content .container:focus {
-    background-color: white; }
+  background-color: #FAFAFA;
+}
+#app #content .container::placeholder {
+  color: #165bdb;
+}
+#app #content .container:focus {
+  background-color: white;
+}
 
 #app {
   display: block;
@@ -25,42 +28,53 @@
   position: relative;
   text-align: center;
   margin: 0px;
-  padding: 0px; }
-  #app #header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: #282828;
-    color: white;
-    line-height: 100px;
-    font-family: 'Quicksand', sans-serif;
-    z-index: 2;
-    font-weight: 900;
-    font-size: 32px;
-    top: 0px; }
-    #app #header i {
-      color: #1b64c4; }
-  #app #content {
-    margin-top: 120px;
-    margin-bottom: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px;
-    position: relative;
-    z-index: 1; }
-    #app #content #preview {
-      color: #165bdb; }
-  #app #footer {
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    background-color: #282828;
-    color: white;
-    line-height: 50px;
-    font-family: 'Quicksand', sans-serif;
-    z-index: 3;
-    bottom: 0px;
-    left: 0px; }
+  padding: 0px;
+}
+#app #header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #282828;
+  color: white;
+  line-height: 100px;
+  font-family: "Quicksand", sans-serif;
+  z-index: 2;
+  font-weight: 900;
+  font-size: 32px;
+  top: 0px;
+}
+#app #header i {
+  color: #1b64c4;
+}
+#app #content {
+  margin-top: 120px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+#app #content [contentEditable=true]:empty::before {
+  content: attr(data-text);
+  padding-top: 0px;
+}
+#app #content #preview {
+  color: #165bdb;
+  pointer-events: none;
+}
+#app #footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #282828;
+  color: white;
+  line-height: 50px;
+  font-family: "Quicksand", sans-serif;
+  z-index: 3;
+  bottom: 0px;
+  left: 0px;
+}
 
 /*# sourceMappingURL=App.css.map */

@@ -14,7 +14,7 @@ function anotherExample(firstLine, lastLine) {
   }
 }
 \`\`\`
-  
+
 You can also make text **bold**... whoa!
 Or _italic_.
 Or... wait for it... **_both!_**
@@ -26,7 +26,7 @@ There's also [links](https://www.freecodecamp.com), and
 And if you want to get really crazy, even tables:
 
 Wild Header | Crazy Header | Another Header?
------------- | ------------- | ------------- 
+------------ | ------------- | -------------
 Your content can | be here, and it | can be here....
 And here. | Okay. | I think we get it.
 
@@ -37,7 +37,7 @@ And here. | Okay. | I think we get it.
 
 
 1. And there are numbererd lists too.
-1. Use just 1s if you want!
+1. Use just 1s if you want! 
 1. But the list goes on...
 - Even if you use dashes or asterisks.
 * And last but not least, let's not forget embedded images:
