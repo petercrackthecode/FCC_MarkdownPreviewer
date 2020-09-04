@@ -5,7 +5,7 @@
   "dependencies": {
     "autogrow-textarea": "^1.0.1",
     "dompurify": "^1.0.11",
-    "marked": "^0.6.3",
+    "marked": "^0.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.1.0",
